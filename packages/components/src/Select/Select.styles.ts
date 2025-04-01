@@ -42,6 +42,13 @@ export const SelectStyles = createGlobalStyle`
     font-family: Roboto,PingFang SC,Lantinghei SC,Helvetica Neue,Helvetica,Arial,Microsoft YaHei,微软雅黑,STHeitiSC-Light,simsun,宋体,WenQuanYi Zen Hei,WenQuanYi Micro Hei,sans-serif;
     user-select: none;
 
+    &.kubed-select-item-group {
+      cursor: unset;
+    }
+    &.kubed-select-item-option-grouped {
+      padding: 6px 24px;
+    }
+
     &.kubed-select-item-option-selected,
     &:hover {
       background-color: ${({ theme }) => theme.palette.accents_7};
